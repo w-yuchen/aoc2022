@@ -6,7 +6,13 @@
 
 int main(int argc, char const *argv[])
 {
-    // int max = 0;
+
+    // day 1a
+    // int c = 1;
+
+    // day 1b;
+    int c = 3;
+
     int cur_sum = 0;
     bool nl = false;
     std::priority_queue<int, std::vector<int>, std::greater<int>> q;
@@ -37,7 +43,7 @@ int main(int argc, char const *argv[])
     }
     int max = 0;
     std::cout << q.size() <<std::endl;
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < c; i++) {
         max += q.top();
         if (q.empty()) {
             continue;
